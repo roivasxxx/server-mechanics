@@ -1,9 +1,14 @@
 import React from "react";
+import JokeComponent from "./components/JokeComponent";
+import { jokes } from "./data";
+import "./styles.css";
 
-const App = () => (
-  <div>
-    <h1>Hello React</h1>
-  </div>
-);
-
-export default App;
+export default function App() {
+  return (
+    <div className="jokeWrapper">
+      {jokes.map((el) => (
+        <JokeComponent joke={el} key={el.id} />
+      ))}
+    </div>
+  );
+}
