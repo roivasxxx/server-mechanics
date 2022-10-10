@@ -1,3 +1,9 @@
-# React 17.0.2 template
+# Server Mechanics task
 
-## Webpack, Babel
+## To run app
+`
+cd frontend 
+
+npm install
+
+npm start`
